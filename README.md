@@ -29,9 +29,20 @@ We use GitHub pages. For information about running sites made with GitHub pages,
 see [GitHub's docs](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/).
 tl;dr:
 
-    gem install github-pages
-    jekyll serve --watch
-    # Navigate to http://localhost:4000
+```bash
+gem install bundler
+
+cd developers
+bundle
+
+bundle exec jekyll serve --open-url
+```
+
+Your default browser will now open with the Linode Developer Docs.
+
+Our included `Gemfile` includes [Jekyll-Livereload](https://github.com/RobertDeRose/jekyll-livereload).
+You can make changes to a file in the docs and as soon as you save it, the browser will refresh.
+Our included `_config.yml` enables this plugin by default.
 
 ## Contributing
 
